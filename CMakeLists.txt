@@ -3,7 +3,12 @@ project(ParallelProgramming)
 
 set(SOURCE_FILES src/laboratory_work1.h
         src/laboratory_work2.h
-        src/main.cpp)
+        src/main.cpp
+        src/lab2/openmp.h
+        src/lab2/mpi-point-to-point.h
+        src/lab2/utils.h
+        src/lab2/mpi-collective.h
+)
 add_executable(ParallelProgramming ${SOURCE_FILES})
 
 find_package(MPI REQUIRED)
